@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import NavList from "../../config/menu";
-import { Menu, Icon } from 'antd';
+import { Menu } from 'antd';
+import {NavLink} from 'react-router-dom'
 import "./index.less";
 const SubMenu = Menu.SubMenu;
 
-export default class NavLeft extends Component {
+export default class Nav extends Component {
     componentWillMount() {
         const menu = this.renderNav(NavList);
         this.setState({
@@ -19,7 +20,7 @@ export default class NavLeft extends Component {
                         title={item.title}
                         key={item.key}
                     >
-                        {this.renderNav(item.children)}
+                       {this.renderNav(item.children)}
                     </SubMenu>
                 )
 
@@ -28,7 +29,7 @@ export default class NavLeft extends Component {
                         title={item.title}
                         key={item.key}
                     >
-                    {item.title}
+                        <NavLink to={item.key}> {item.title}</NavLink> 
                     </Menu.Item>
         })
     }
@@ -37,7 +38,7 @@ export default class NavLeft extends Component {
         return (
             <div>
                 <div className='logo'>
-                    <img src='' />
+                    <img src='' alt='加载失败'/>
                     <h1>后台管理</h1>
                 </div>
                 <Menu

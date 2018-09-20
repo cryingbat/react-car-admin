@@ -31,5 +31,41 @@ export default [
             title: '轮播图',
             key: '/admin/ui/carousel'
         }]
-    }
+    },
+    {
+        title: '表单',
+        key: '/admin/form'
+    },
+    {
+        title: '表格',
+        key: '/admin/table'
+    },
+    {
+        title: '富文本',
+        key: '/admin/edit'
+    },
+    {
+        title: '城市管理',
+        key: '/admin/cityManager'
+    },
+    {
+        title: '订单管理',
+        key: '/admin/orderManager'
+    },
+    {
+        title: '员工管理',
+        key: '/admin/staffManager'
+    },
+    {
+        title: '车辆地图',
+        key: '/admin/carMap'
+    },
+    {
+        title: '图标',
+        key: '/admin/icon'
+    },
+    {
+        title: '权限设置',
+        key: '/admin/authorSet'
+    },
 ]

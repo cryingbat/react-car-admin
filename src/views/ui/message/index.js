@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Card, Button, message } from 'antd';
 import './index.less'
-export default class Buttons extends Component {
+export default class Message extends Component {
     state = {
         value: 'topRight'
     }

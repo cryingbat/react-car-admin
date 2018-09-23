@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { Card,Icon, Spin, Alert  } from 'antd';
+import { Card, Icon, Spin, Alert  } from 'antd';
 import './index.less'
-export default class Buttons extends Component {
+export default class Spins extends Component {
     render() {
         const icon = <Icon type='loading' />
         return (

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Card, Button,Icon,notification,Radio } from 'antd';
 import './index.less'
-export default class Buttons extends Component {
+export default class Notification extends Component {
     state={
         value: 'topRight'
     }
@@ -32,8 +32,8 @@ export default class Buttons extends Component {
                 <Card title='通知'>
                     <Button type='primary' onClick={ ()=>this.handleNotify('success')}>success</Button>
                     <Button type='primary' onClick={ ()=>this.handleNotify('error')}>error</Button>
-                    <Button type='primary' onClick={() => this.handleNotify('warning')}>warning</Button>
-                    <Button type='primary' onClick={ ()=>this.handleNotify('info')}>info</Button>
+                    <Button type='primary' onClick={ ()=>this.handleNotify('warning')}>info</Button>
+                    <Button type='primary' onClick={ ()=>this.handleNotify('info')}>warning</Button>
                 </Card>
                 <Card title='自定义图标'>
                     <Button type='primary' onClick={ this.handleCustomer}>自定义位置</Button>

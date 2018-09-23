@@ -1,5 +1,4 @@
-export default [
-    {
+export default [{
         title: '首页',
         key: '/admin/home'
     },
@@ -34,11 +33,33 @@ export default [
     },
     {
         title: '表单',
-        key: '/admin/form'
+        key: '/admin/form',
+        children: [{
+                title: '基础表单',
+                key: '/admin/form/base'
+            },
+            {
+                title: '登录表单',
+                key: '/admin/form/align'
+            },
+            {
+                title: '注册表单',
+                key: '/admin/form/regist'
+            }, 
+            {
+                title: '自定义校验',
+                key: '/admin/form/customerRegist'
+            }
+        ]
     },
     {
         title: '表格',
-        key: '/admin/table'
+        key: '/admin/table',
+        children: [{
+                title: '基础表格',
+                key: '/admin/table/basic'
+            },
+        ]
     },
     {
         title: '富文本',

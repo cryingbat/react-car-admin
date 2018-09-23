@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Card, Button, Modal } from 'antd';
 const confirm = Modal.confirm;
 
-export default class Buttons extends Component {
+export default class Modals extends Component {
     state ={
         loading: false,
         value:'small',

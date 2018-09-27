@@ -26,6 +26,7 @@ export default class Tab extends Component {
     add = () => {
         const panes = this.state.panes;
         const activeKey = `newTab${this.state.newTabIndex++}`;
+        
         panes.push({ title: 'New Tab', content: 'Content of new Tab', key: activeKey });
         this.setState({ panes, activeKey });
     }

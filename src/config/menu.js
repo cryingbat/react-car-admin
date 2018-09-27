@@ -1,92 +1,68 @@
 export default [{
         title: '首页',
-        key: '/admin/home'
+        key: '/home'
     },
     {
         title: 'UI',
-        key: '/admin/ui',
+        key: '/ui',
         children: [{
             title: '按钮',
-            key: '/admin/ui/buttons'
+            key: '/ui/buttons'
         }, {
             title: '弹框',
-            key: '/admin/ui/modals'
+            key: '/ui/modals'
         }, {
             title: '加载',
-            key: '/admin/ui/Loading'
+            key: '/ui/Loading'
         }, {
             title: '通知',
-            key: '/admin/ui/notify'
+            key: '/ui/notify'
         }, {
             title: '消息',
-            key: '/admin/ui/message'
+            key: '/ui/message'
         }, {
             title: 'tab标签',
-            key: '/admin/ui/tab'
+            key: '/ui/tab'
         }, {
             title: '图片',
-            key: '/admin/ui/img'
+            key: '/ui/img'
         }, {
             title: '轮播图',
-            key: '/admin/ui/carousel'
+            key: '/ui/carousel'
         }]
     },
     {
         title: '表单',
-        key: '/admin/form',
+        key: '/form',
         children: [{
                 title: '基础表单',
-                key: '/admin/form/base'
+                key: '/form/base'
             },
             {
                 title: '登录表单',
-                key: '/admin/form/align'
+                key: '/form/align'
             },
             {
                 title: '注册表单',
-                key: '/admin/form/regist'
+                key: '/form/regist'
             }, 
             {
                 title: '自定义校验',
-                key: '/admin/form/customerRegist'
+                key: '/form/customerRegist'
             }
         ]
     },
     {
         title: '表格',
-        key: '/admin/table',
+        key: '/table',
         children: [{
                 title: '基础表格',
-                key: '/admin/table/basic'
+                key: '/table/basic'
             },
         ]
     },
     {
-        title: '富文本',
-        key: '/admin/edit'
-    },
-    {
-        title: '城市管理',
-        key: '/admin/cityManager'
-    },
-    {
-        title: '订单管理',
-        key: '/admin/orderManager'
-    },
-    {
-        title: '员工管理',
-        key: '/admin/staffManager'
-    },
-    {
-        title: '车辆地图',
-        key: '/admin/carMap'
-    },
-    {
-        title: '图标',
-        key: '/admin/icon'
-    },
-    {
         title: '权限设置',
-        key: '/admin/authorSet'
+        key: '/authorSet'
     },
 ]

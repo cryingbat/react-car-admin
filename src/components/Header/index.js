@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Row, Col } from 'antd';
 import Utils from '../../util';
 import './index.less'
-export default class Header extends Component {
+import { connect } from 'react-redux';
+ class Header extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -10,6 +11,7 @@ export default class Header extends Component {
         }
     }
     render() {
+        const { menuName } = this.props;
         return (
             <div className='header'>
                 <Row className='header-top'>
@@ -20,7 +22,7 @@ export default class Header extends Component {
                 </Row>
                 <Row className='crumb'>
                     <Col span='4' className='crumb-title'>
-                        首页
+                        {menuName || '首页'}
                     </Col>
                     <Col span='20' className='weather'>
                         <span className='date'>{this.state.system}</span>
@@ -39,3 +41,10 @@ export default class Header extends Component {
         },1000)
     }
 }
+
+const mapStateToProps = state => {
+    return {
+        menuName: state.menuName
+    }
+};
+export default connect(mapStateToProps)(Header)

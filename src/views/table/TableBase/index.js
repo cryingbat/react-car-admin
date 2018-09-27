@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Card, Table, Modal, Button, message } from 'antd';
 import Fetch from '../../../util/fetch';
 import './index.less'
-import Utils from "../../../util/index";
 export default class TableBase extends Component {
     state = {
         dataSource: [],
@@ -45,12 +44,10 @@ export default class TableBase extends Component {
                 }
             }
         }).then((res) => {
+            console.log(res);
             if (res.code === '0') {
                 this.setState({
-                    Source: res.result,
-                    pagenation: Utils.pagenation(res.result, (current) => {
-                        console.log(current);
-                    })
+                    Source: res.result.list,
                 })
             }
         }).catch(err => {

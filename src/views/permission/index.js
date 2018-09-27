@@ -4,6 +4,7 @@ import Fetch from '../../util/fetch'
 import DTable from '../../components/DTable'
 import menuConfig from '../../config/menu'
 import Utils from '../../util/index'
+import './index.less'
 const FormItem = Form.Item;
 const Option = Select.Option;
 const TreeNode = Tree.TreeNode;
